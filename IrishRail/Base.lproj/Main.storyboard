@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Schedule View Controller-->
         <scene sceneID="CQt-B7-12Y">
             <objects>
-                <viewController id="wDN-Z9-nEI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScheduleVC" id="wDN-Z9-nEI" customClass="ScheduleViewController" customModule="IrishRail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gy6-49-DYR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="M2y-3r-MpQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleCell" rowHeight="100" id="M2y-3r-MpQ" customClass="ScheduleTableViewCell" customModule="IrishRail" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M2y-3r-MpQ" id="c2F-Lw-Lag">
@@ -170,6 +170,11 @@
                                                 <constraint firstItem="Wj2-CJ-nG8" firstAttribute="top" secondItem="c2F-Lw-Lag" secondAttribute="topMargin" constant="8" id="hOx-W5-ax7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="arrivalTimeLabel" destination="eKv-cM-x2i" id="n8R-8Y-lhY"/>
+                                            <outlet property="departureTimeLabel" destination="nl6-XL-6sO" id="7Mj-Av-RdX"/>
+                                            <outlet property="destinationLabel" destination="DSg-JN-T5x" id="CBu-af-5Wy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -184,6 +189,9 @@
                         <viewLayoutGuide key="safeArea" id="uBL-1K-3dZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="str-wO-HRt"/>
+                    <connections>
+                        <outlet property="scheduleTableView" destination="GYz-e8-Tvv" id="dks-V5-orH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzs-aO-Zoe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
