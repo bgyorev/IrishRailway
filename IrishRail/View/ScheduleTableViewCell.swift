@@ -18,12 +18,12 @@ class ScheduleTableViewCell: UITableViewCell {
 	@IBOutlet weak var expectedDepartureTimeLabel: UILabel!
 	
 	open func setupCell(withDictionary dict: Dictionary<String, String?>) {
-		originLabel.text = dict["Origin"] != nil ? dict["Origin"]! : ""
-		destinationLabel.text = dict["Destination"] != nil ? dict["Destination"]! : ""
-		departureTimeLabel.text = dict["Origintime"] != nil ? dict["Origintime"]! : ""
-		arrivalTimeLabel.text = dict["Destinationtime"] != nil ? dict["Destinationtime"]! : ""
-		expectedArrivalTimeLabel.text = dict["Exparrival"] != nil ? dict["Exparrival"]! : ""
-		expectedDepartureTimeLabel.text = dict["Expdepart"] != nil ? dict["Expdepart"]! : ""
+		originLabel.text = dict[Constants.xmlFields.origin] != nil ? dict[Constants.xmlFields.origin]! : ""
+		destinationLabel.text = dict[Constants.xmlFields.destionation] != nil ? dict[Constants.xmlFields.destionation]! : ""
+		departureTimeLabel.text = dict[Constants.xmlFields.originTime] != nil ? dict[Constants.xmlFields.originTime]! : ""
+		arrivalTimeLabel.text = dict[Constants.xmlFields.destinationTime] != nil ? dict[Constants.xmlFields.destinationTime]! : ""
+		expectedArrivalTimeLabel.text = dict[Constants.xmlFields.expectedArrival] != nil ? dict[Constants.xmlFields.expectedArrival]! : ""
+		expectedDepartureTimeLabel.text = dict[Constants.xmlFields.expectedDeparture] != nil ? dict[Constants.xmlFields.expectedDeparture]! : ""
 	}
 	
     override func awakeFromNib() {
