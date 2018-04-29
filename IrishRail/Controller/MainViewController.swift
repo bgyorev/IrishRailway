@@ -42,6 +42,10 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 
 		stationTextField.inputAccessoryView = toolbar
 		
+		
+		checkTrainButton.layer.cornerRadius = 8
+		checkTrainButton.layer.borderWidth = 1.0
+		checkTrainButton.layer.borderColor = UIColor.black.cgColor
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
