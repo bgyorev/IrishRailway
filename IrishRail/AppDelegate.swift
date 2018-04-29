@@ -44,3 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UIViewController {
+	func showAlert(withTitle title: String, message: String) {
+		let alert = UIAlertController(title: "Stations error", message: "Application couldn't fetch railway stations list", preferredStyle: .alert)
+		let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+		alert.addAction(okAction)
+		self.present(alert, animated: true, completion: nil)
+	}
+}
+
