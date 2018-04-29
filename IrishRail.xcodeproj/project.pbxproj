@@ -16,6 +16,8 @@
 		FA6AE9F82093332C009CBC93 /* IrishRailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE9F72093332C009CBC93 /* IrishRailUITests.swift */; };
 		FA6AEA0B20933719009CBC93 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AEA0A20933719009CBC93 /* ScheduleViewController.swift */; };
 		FA6AEA0D2093378A009CBC93 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AEA0C2093378A009CBC93 /* ScheduleTableViewCell.swift */; };
+		FA6AEA0F2095A98D009CBC93 /* WebserviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AEA0E2095A98D009CBC93 /* WebserviceHelper.swift */; };
+		FA6AEA122095A9F4009CBC93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AEA112095A9F4009CBC93 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FA6AE9F92093332C009CBC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6AEA0A20933719009CBC93 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		FA6AEA0C2093378A009CBC93 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		FA6AEA0E2095A98D009CBC93 /* WebserviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceHelper.swift; sourceTree = "<group>"; };
+		FA6AEA112095A9F4009CBC93 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 		FA6AEA052093333D009CBC93 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				FA6AEA0E2095A98D009CBC93 /* WebserviceHelper.swift */,
+				FA6AEA112095A9F4009CBC93 /* Constants.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -303,9 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6AEA0B20933719009CBC93 /* ScheduleViewController.swift in Sources */,
+				FA6AEA0F2095A98D009CBC93 /* WebserviceHelper.swift in Sources */,
 				FA6AE9DA20933329009CBC93 /* MainViewController.swift in Sources */,
 				FA6AEA0D2093378A009CBC93 /* ScheduleTableViewCell.swift in Sources */,
 				FA6AE9D820933329009CBC93 /* AppDelegate.swift in Sources */,
+				FA6AEA122095A9F4009CBC93 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
