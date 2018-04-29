@@ -53,4 +53,30 @@ class WebserviceHelper: NSObject {
 			
 		}
 	}
+	
+	open func getTrainStops(byCode trainCode: String, completion:(([Dictionary<String, String?>]) -> Void)) {
+		let now = Date()
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "ddMMMyyyy"
+		
+		let urlString = Constants.webLinks.getTrainsStopsByCode.replacingOccurrences(of: "$1", with: trainCode.replacingOccurrences(of: " ", with: "")).replacingOccurrences(of: "$2", with: dateFormatter.string(from: now))
+		
+		if let url = URL(string: urlString) {
+			guard let trainData = try? Data(contentsOf: url) else {
+				return
+			}
+			
+			var stops = [Dictionary<String, String?>]()
+			if let parser = CXMLParser(data: trainData) {
+				for stop in parser.rootElement.elementsNamed("objTrainMovements") {
+					var elements = Dictionary<String, String?>()
+					for element in stop {
+						elements[element.tagName] = element.string
+					}
+					stops.append(elements)
+				}
+			}
+			completion(stops)
+		}
+	}
 }

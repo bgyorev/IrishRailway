@@ -12,6 +12,7 @@ struct Constants {
 	struct webLinks {
 		static let getAllStations = "http://api.irishrail.ie/realtime/realtime.asmx/getAllStationsXML"
 		static let getStationTrainsByCode = "http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByCodeXML?StationCode="
+		static let getTrainsStopsByCode = "http://api.irishrail.ie/realtime/realtime.asmx/getTrainMovementsXML?TrainId=$1&TrainDate=$2"
 	}
 	
 	struct xmlFields {
