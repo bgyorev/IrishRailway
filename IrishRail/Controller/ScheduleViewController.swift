@@ -10,8 +10,11 @@ import UIKit
 
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+	// IBOutlets and views
 	@IBOutlet weak var messageLabel: UILabel!
 	@IBOutlet weak var scheduleTableView: UITableView!
+	
+	// Controller properties
 	open var trains: [Dictionary<String, String?>]?
 	private let webserviceHelper = WebserviceHelper.sharedInstance
 	
