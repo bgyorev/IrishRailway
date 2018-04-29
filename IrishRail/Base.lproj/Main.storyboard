@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Irish Railway-->
+        <!--Irish Railways-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainViewController" customModule="IrishRail" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please select railway station" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-DM-WyP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please select origin railway station" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-DM-WyP">
                                 <rect key="frame" x="16" y="137" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xwy-qu-Yu7"/>
@@ -42,7 +42,7 @@
                                     <action selector="checkTrainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vAz-DH-bRK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Railway station:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7t-xy-Xxq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin station:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7t-xy-Xxq">
                                 <rect key="frame" x="112" y="104" width="150" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="2Ox-cR-TrY"/>
@@ -65,7 +65,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Irish Railway" id="wZ5-3r-Nub"/>
+                    <navigationItem key="navigationItem" title="Irish Railways" id="wZ5-3r-Nub"/>
                     <connections>
                         <outlet property="checkTrainButton" destination="ebY-cf-wdt" id="d6n-jZ-trn"/>
                         <outlet property="stationTextField" destination="FoG-DM-WyP" id="Mpt-Am-c1O"/>
@@ -279,6 +279,63 @@
             </objects>
             <point key="canvasLocation" x="2645.5999999999999" y="132.68365817091455"/>
         </scene>
+        <!--Stops View Controller-->
+        <scene sceneID="YUt-cq-fyJ">
+            <objects>
+                <viewController id="F5H-44-lrU" customClass="StopsViewController" customModule="IrishRail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FW3-fW-Dww">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZSH-ue-3WL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stopCell" textLabel="fpK-cT-e70" detailTextLabel="2iV-8O-wa4" style="IBUITableViewCellStyleSubtitle" id="IUW-fU-5eJ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IUW-fU-5eJ" id="kv4-xS-jXx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fpK-cT-e70">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iV-8O-wa4">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZSH-ue-3WL" firstAttribute="top" secondItem="NdZ-9w-78R" secondAttribute="top" id="9cA-TW-LB6"/>
+                            <constraint firstItem="ZSH-ue-3WL" firstAttribute="leading" secondItem="NdZ-9w-78R" secondAttribute="leading" id="DKV-aI-z1M"/>
+                            <constraint firstItem="ZSH-ue-3WL" firstAttribute="bottom" secondItem="NdZ-9w-78R" secondAttribute="bottom" id="PbR-0E-cTz"/>
+                            <constraint firstItem="ZSH-ue-3WL" firstAttribute="trailing" secondItem="NdZ-9w-78R" secondAttribute="trailing" id="zgw-28-Knj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NdZ-9w-78R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1ld-06-E5A"/>
+                    <connections>
+                        <outlet property="stopsTableView" destination="ZSH-ue-3WL" id="lZS-Ox-MeX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yS-Jk-GJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4132" y="132.68365817091455"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HY6-Wc-pkl">
             <objects>
@@ -314,6 +371,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZM-Sb-IZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1953" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FuF-4y-2Jy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dub-w6-SRU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8iN-f1-Xd5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F5H-44-lrU" kind="relationship" relationship="rootViewController" id="mXc-1w-FaU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayl-68-CaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3434" y="133"/>
         </scene>
     </scenes>
 </document>
