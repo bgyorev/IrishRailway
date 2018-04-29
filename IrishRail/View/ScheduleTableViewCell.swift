@@ -10,6 +10,16 @@ import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
 
+	@IBOutlet weak var destinationLabel: UILabel!
+	@IBOutlet weak var departureTimeLabel: UILabel!
+	@IBOutlet weak var arrivalTimeLabel: UILabel!
+	
+	open func setupCell(withDictionary dict: Dictionary<String, String>) {
+		destinationLabel.text = dict["Destination"]
+		departureTimeLabel.text = dict["DepartureTime"]
+		arrivalTimeLabel.text = dict["ArrivalTime"]
+	}
+	
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
