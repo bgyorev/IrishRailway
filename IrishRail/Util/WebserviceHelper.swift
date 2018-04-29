@@ -14,21 +14,43 @@ class WebserviceHelper: NSObject {
 	
 	open func getAllStations(completion: (([Dictionary<String, String?>]) -> Void)) {
 		if let url = URL(string: Constants.webLinks.getAllStations) {
-			guard let stationData = try? Data(contentsOf: url) else {
+			guard let stationsData = try? Data(contentsOf: url) else {
 				return
 			}
 			
 			var stations = [Dictionary<String, String?>]()
-			let parser = CXMLParser(data: stationData)
-			for station in (parser?.rootElement)!.elementsNamed("objStation") {
-				var elements = Dictionary<String, String>()
-				for element in station {
-					elements[element.tagName] = element.string
+			if let parser = CXMLParser(data: stationsData) {
+				for station in parser.rootElement.elementsNamed("objStation") {
+					var elements = Dictionary<String, String?>()
+					for element in station {
+						elements[element.tagName] = element.string
+					}
+					stations.append(elements)
 				}
-				stations.append(elements)
+				
+				completion(stations)
+			}
+		}
+	}
+	
+	open func getStationTrains(byCode stationCode: String, completion: (([Dictionary<String, String?>]) -> Void)) {
+		if let url = URL(string: Constants.webLinks.getStationTrainsByCode+stationCode) {
+			guard let stationData = try? Data(contentsOf: url) else {
+				return
 			}
 			
-			completion(stations)
+			var trains = [Dictionary<String, String?>]()
+			if let parser = CXMLParser(data: stationData) {
+				for train in parser.rootElement {
+					var elements = Dictionary<String, String?>()
+					for element in train {
+						elements[element.tagName] = element.string
+					}
+					trains.append(elements)
+				}
+			}
+			completion(trains)
+			
 		}
 	}
 }
