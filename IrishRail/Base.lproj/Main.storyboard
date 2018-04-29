@@ -83,6 +83,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It appears that there are no trains running through this station in the next 90 minutes" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-r6-eYa">
+                                <rect key="frame" x="16" y="283.5" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2y3-37-T3M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GYz-e8-Tvv">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -263,15 +272,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7WW-r6-eYa" firstAttribute="centerY" secondItem="gy6-49-DYR" secondAttribute="centerY" id="ETU-fD-sSI"/>
                             <constraint firstItem="GYz-e8-Tvv" firstAttribute="top" secondItem="uBL-1K-3dZ" secondAttribute="top" id="GwZ-RW-TMt"/>
                             <constraint firstItem="GYz-e8-Tvv" firstAttribute="leading" secondItem="uBL-1K-3dZ" secondAttribute="leading" id="VHb-9u-Nxf"/>
+                            <constraint firstAttribute="trailing" secondItem="7WW-r6-eYa" secondAttribute="trailing" constant="16" id="XiE-ax-Lw9"/>
                             <constraint firstItem="GYz-e8-Tvv" firstAttribute="trailing" secondItem="uBL-1K-3dZ" secondAttribute="trailing" id="faz-eT-4oS"/>
+                            <constraint firstItem="7WW-r6-eYa" firstAttribute="leading" secondItem="uBL-1K-3dZ" secondAttribute="leading" constant="16" id="m9N-Xb-PTi"/>
                             <constraint firstItem="GYz-e8-Tvv" firstAttribute="bottom" secondItem="uBL-1K-3dZ" secondAttribute="bottom" id="zv7-qH-xRq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uBL-1K-3dZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="str-wO-HRt"/>
                     <connections>
+                        <outlet property="messageLabel" destination="7WW-r6-eYa" id="MQv-il-Wc8"/>
                         <outlet property="scheduleTableView" destination="GYz-e8-Tvv" id="dks-V5-orH"/>
                     </connections>
                 </viewController>

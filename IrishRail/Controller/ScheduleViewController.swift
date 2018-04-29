@@ -10,6 +10,7 @@ import UIKit
 
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+	@IBOutlet weak var messageLabel: UILabel!
 	@IBOutlet weak var scheduleTableView: UITableView!
 	open var trains: [Dictionary<String, String?>]?
 	private let webserviceHelper = WebserviceHelper.sharedInstance
@@ -29,6 +30,13 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
 		}
     }
 
+	override func viewWillAppear(_ animated: Bool) {
+		if trains?.count == 0 {
+			self.scheduleTableView.isHidden = true
+			self.messageLabel.isHidden = false
+		}
+	}
+	
 	// MARK: UITableViewDataSource
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
