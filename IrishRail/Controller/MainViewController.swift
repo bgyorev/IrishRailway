@@ -26,12 +26,29 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 		let toolbar = UIToolbar()
 		toolbar.barStyle = .default
 		toolbar.isTranslucent = true
+		toolbar.isUserInteractionEnabled = true
+		toolbar.sizeToFit()
 		
-		
+		let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneButtonPressed))
+		let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+		let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelButtonPressed))
+		toolbar.setItems([cancelButton, space, doneButton], animated: false)
+
+		stationTextField.inputAccessoryView = toolbar
 		
 	}
 
+	// MARK: Private methods
+	@objc
+	private func doneButtonPressed() {
+		stationTextField.resignFirstResponder()
+	}
 	
+	@objc
+	private func cancelButtonPressed() {
+		self.doneButtonPressed()
+		stationTextField.text = ""
+	}
 	
 	// MARK: UIPickerViewDataSource
 	func numberOfComponents(in pickerView: UIPickerView) -> Int {
