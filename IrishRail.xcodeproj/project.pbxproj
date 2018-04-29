@@ -10,6 +10,7 @@
 		0D2AC3A727BAE2166554AA49 /* Pods_IrishRailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E702BB2A4C0B833200AF247 /* Pods_IrishRailUITests.framework */; };
 		BB88B1AACF543BBEC5F37998 /* Pods_IrishRail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2DE554D49B1828E02A4145 /* Pods_IrishRail.framework */; };
 		C448C33731F6F84111F9DB59 /* Pods_IrishRailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D4E153EC6E901B2473BEC8 /* Pods_IrishRailTests.framework */; };
+		FA60EF4C2095EA0B00C059E6 /* StopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60EF4B2095EA0B00C059E6 /* StopsViewController.swift */; };
 		FA6AE9D820933329009CBC93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE9D720933329009CBC93 /* AppDelegate.swift */; };
 		FA6AE9DA20933329009CBC93 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE9D920933329009CBC93 /* MainViewController.swift */; };
 		FA6AE9DD20933329009CBC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6AE9DB20933329009CBC93 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		A1D4E153EC6E901B2473BEC8 /* Pods_IrishRailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2DE554D49B1828E02A4145 /* Pods_IrishRail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IrishRail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26A474886016234B000EAB6 /* Pods-IrishRail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IrishRail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IrishRail/Pods-IrishRail.debug.xcconfig"; sourceTree = "<group>"; };
+		FA60EF4B2095EA0B00C059E6 /* StopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewController.swift; sourceTree = "<group>"; };
 		FA6AE9D420933329009CBC93 /* IrishRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6AE9D720933329009CBC93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6AE9D920933329009CBC93 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				FA6AE9D920933329009CBC93 /* MainViewController.swift */,
 				FA6AEA0A20933719009CBC93 /* ScheduleViewController.swift */,
+				FA60EF4B2095EA0B00C059E6 /* StopsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				FA6AEA0B20933719009CBC93 /* ScheduleViewController.swift in Sources */,
 				FA6AEA0F2095A98D009CBC93 /* WebserviceHelper.swift in Sources */,
 				FA6AE9DA20933329009CBC93 /* MainViewController.swift in Sources */,
+				FA60EF4C2095EA0B00C059E6 /* StopsViewController.swift in Sources */,
 				FA6AEA0D2093378A009CBC93 /* ScheduleTableViewCell.swift in Sources */,
 				FA6AE9D820933329009CBC93 /* AppDelegate.swift in Sources */,
 				FA6AEA122095A9F4009CBC93 /* Constants.swift in Sources */,
@@ -609,7 +613,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y645AC2YF;
 				INFOPLIST_FILE = IrishRail/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.bgyorev.IrishRail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -625,7 +632,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y645AC2YF;
 				INFOPLIST_FILE = IrishRail/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.bgyorev.IrishRail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -642,7 +652,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y645AC2YF;
 				INFOPLIST_FILE = IrishRailTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.bgyorev.IrishRailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -660,7 +674,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y645AC2YF;
 				INFOPLIST_FILE = IrishRailTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.bgyorev.IrishRailTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -677,7 +695,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y645AC2YF;
 				INFOPLIST_FILE = IrishRailUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.bgyorev.IrishRailUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -694,7 +716,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Y645AC2YF;
 				INFOPLIST_FILE = IrishRailUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.bgyorev.IrishRailUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
