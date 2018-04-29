@@ -1,0 +1,16 @@
+PODS:
+  - CheatyXML (2.1.0)
+
+DEPENDENCIES:
+  - CheatyXML
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CheatyXML
+
+SPEC CHECKSUMS:
+  CheatyXML: 75805cc3357c9607677e203aecaa4c0bdba913b3
+
+PODFILE CHECKSUM: 8ba2f9f645a50433c7c5595c1fda4790b8167233
+
+COCOAPODS: 1.5.0

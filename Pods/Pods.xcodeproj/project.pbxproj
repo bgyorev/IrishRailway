@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1563C60E28EFA111D1EECB6BBEF0123F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1D09741C2DBD4D00D1A50DA30261BDDF /* CXMLNullAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBC6FC8102EF769DEA6B6508BB7875 /* CXMLNullAttribute.swift */; };
+		1D2B6F6229063A8C0B7D94A8573C9941 /* CXMLAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB3053A7B9B8747D1160C27D8CA7C68 /* CXMLAttribute.swift */; };
+		29FBE6124A660D25AD7A1D9D95A1F1DC /* CXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245B517F36CB39141DFF4E504D1FD4C1 /* CXMLParser.swift */; };
+		58548BCC4ED23BB71C9088AB12757A43 /* Pods-IrishRail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BA28D79A187DF7AE7938FBDC359448 /* Pods-IrishRail-dummy.m */; };
+		639F3046A9B73FB0BF6765D7E8207482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7F815FFE052B82442D130347AE37A060 /* CheatyXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 805E65B11C21EA7480B75596EB17E46A /* CheatyXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88CBA17ED46BE427BBEA9342262BEA64 /* Pods-IrishRail-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFB137FE3B38087E82D650BBCFC0B4F /* Pods-IrishRail-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93EC6593822368149222B3F6545B415D /* Pods-IrishRailTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25421B14752746EB5784423178840C /* Pods-IrishRailTests-dummy.m */; };
+		99392F58622C8208E942E936134B9CD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AD3401DDC885158A60113FB8C379AD9D /* CXMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A104870ED60699CEF0D61E39B76D2 /* CXMLElement.swift */; };
+		BCC908B1AA79BC8B6BF60351EA5B31A5 /* CXMLNullTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE96FEE3D664038010AB3E3AFBD1D6 /* CXMLNullTag.swift */; };
+		BF0DC6A3F8E3094B493D2884A92254CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C2BB37BE9AA4C01464FB6DEBAE8CABF5 /* CXMLTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C569315A8B3A4B8C38B80CD30C81F /* CXMLTag.swift */; };
+		D538F62DEED802045A8C88D02EBED730 /* Pods-IrishRailUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8792F60EF8054DAABA13CF55ACD56E69 /* Pods-IrishRailUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8A8BB06683E07565E87E1F4758E234F /* Pods-IrishRailTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E62DA03C284CF17D15F096A5962FD524 /* Pods-IrishRailTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0B8F84E83309F19E1F19A8973A0A4A2 /* Pods-IrishRailUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD92ADC3ACAA00AB41F6871D90660BA /* Pods-IrishRailUITests-dummy.m */; };
+		F20CFF209F874F6F4F2C773B24C09603 /* CheatyXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DC045E9F9681AA99806FEB9FD20114 /* CheatyXML-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C0D4CA74017778E78B7C05A48388ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840AFA8D85C5B9D3A59797AA9F6BB90D;
+			remoteInfo = CheatyXML;
+		};
+		6C84075AD2B1659FA16501D7D08C4C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0890D404D1AB5016E43C8D8474E1D03C;
+			remoteInfo = "Pods-IrishRail";
+		};
+		CBB78301E5E5ED377FB12DABB4819F8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0890D404D1AB5016E43C8D8474E1D03C;
+			remoteInfo = "Pods-IrishRail";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1206B330451565D331DFE602966E49D3 /* Pods-IrishRail-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IrishRail-acknowledgements.markdown"; sourceTree = "<group>"; };
+		172ED6CC5269EFEB519BEE85CCF4E043 /* Pods_IrishRailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IrishRailTests.framework; path = "Pods-IrishRailTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1962FD8F4C2712AA261BA60437605388 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A25421B14752746EB5784423178840C /* Pods-IrishRailTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IrishRailTests-dummy.m"; sourceTree = "<group>"; };
+		1DBBC6FC8102EF769DEA6B6508BB7875 /* CXMLNullAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CXMLNullAttribute.swift; path = CheatyXML/CXMLNullAttribute.swift; sourceTree = "<group>"; };
+		21E678F15036E9F2A84A21AF63919D3F /* Pods-IrishRail.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IrishRail.modulemap"; sourceTree = "<group>"; };
+		245B517F36CB39141DFF4E504D1FD4C1 /* CXMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CXMLParser.swift; path = CheatyXML/CXMLParser.swift; sourceTree = "<group>"; };
+		387C4C8559D8E1F95A510BC5535635FB /* Pods-IrishRail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IrishRail.debug.xcconfig"; sourceTree = "<group>"; };
+		432B8BC496505067CDE688808182F08A /* CheatyXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CheatyXML.xcconfig; sourceTree = "<group>"; };
+		4C49719DD3ED7BEDBDE2FC61D065B929 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5373965722C4B349DF79A15B0BB67858 /* Pods-IrishRail-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IrishRail-acknowledgements.plist"; sourceTree = "<group>"; };
+		548FC6CE1B9B977F537C4E11062DF0A3 /* Pods-IrishRailTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IrishRailTests.modulemap"; sourceTree = "<group>"; };
+		55EE9DADFDB87DF3220054C70B0743DA /* Pods-IrishRailUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IrishRailUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		58EFCC6B36BADBEB339ACCEA52130616 /* Pods-IrishRailUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IrishRailUITests.modulemap"; sourceTree = "<group>"; };
+		5BF15682DA03C664ED022F1B4AA26AA2 /* Pods-IrishRailUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IrishRailUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5FD92ADC3ACAA00AB41F6871D90660BA /* Pods-IrishRailUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IrishRailUITests-dummy.m"; sourceTree = "<group>"; };
+		605481EC20E64B2D1C62102F57FC29D7 /* Pods_IrishRail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IrishRail.framework; path = "Pods-IrishRail.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6709B17CF4ECBCE8AE68243F3421D834 /* Pods-IrishRailTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IrishRailTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		79BA28D79A187DF7AE7938FBDC359448 /* Pods-IrishRail-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IrishRail-dummy.m"; sourceTree = "<group>"; };
+		7D2FC5C12C6803BFEB821255AA15151C /* CheatyXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheatyXML-prefix.pch"; sourceTree = "<group>"; };
+		8040B9C3F2CF64E56C656C33A7B55502 /* Pods-IrishRailUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IrishRailUITests-frameworks.sh"; sourceTree = "<group>"; };
+		805E65B11C21EA7480B75596EB17E46A /* CheatyXML-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CheatyXML-umbrella.h"; sourceTree = "<group>"; };
+		8792F60EF8054DAABA13CF55ACD56E69 /* Pods-IrishRailUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IrishRailUITests-umbrella.h"; sourceTree = "<group>"; };
+		8ADBBBF5E7D3B4258CA2064AD9733D97 /* CheatyXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CheatyXML.framework; path = CheatyXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B758043279D1BA4BF5402BE0329B996 /* Pods-IrishRail-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IrishRail-frameworks.sh"; sourceTree = "<group>"; };
+		8B8621FCA8C37B58ECB337C8048BC934 /* Pods-IrishRailTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IrishRailTests-frameworks.sh"; sourceTree = "<group>"; };
+		9251811D81B8D79C483F777943B81252 /* Pods-IrishRailUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IrishRailUITests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A17DD754124BE8821AED1FED41B6B4 /* Pods-IrishRail-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IrishRail-resources.sh"; sourceTree = "<group>"; };
+		9BFB137FE3B38087E82D650BBCFC0B4F /* Pods-IrishRail-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IrishRail-umbrella.h"; sourceTree = "<group>"; };
+		9E2FD0F209886ED66C83E4D05E440084 /* Pods-IrishRailUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IrishRailUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4D8F94E7B856D86F8CD3CC7BB4F26A6 /* Pods-IrishRail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IrishRail.release.xcconfig"; sourceTree = "<group>"; };
+		B0D71D0D799D327E72F560D8595AAE1B /* Pods-IrishRailUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IrishRailUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C210FA11EEEDBD64B111897F13D49806 /* Pods_IrishRailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IrishRailUITests.framework; path = "Pods-IrishRailUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C995DF18B82F7A1469129802F40E8227 /* Pods-IrishRailTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IrishRailTests-resources.sh"; sourceTree = "<group>"; };
+		C9AE5FE716CE1A97F3D2867FC0AD91E3 /* Pods-IrishRailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IrishRailTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAFD7751961627FD96AB2DFC8CB80EB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDE96FEE3D664038010AB3E3AFBD1D6 /* CXMLNullTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CXMLNullTag.swift; path = CheatyXML/CXMLNullTag.swift; sourceTree = "<group>"; };
+		D6448076E581AD1EAB175DC1A8F4C8BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88A104870ED60699CEF0D61E39B76D2 /* CXMLElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CXMLElement.swift; path = CheatyXML/CXMLElement.swift; sourceTree = "<group>"; };
+		DABC6F728FFEDB27BC6FAA9C847F04D5 /* Pods-IrishRailTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IrishRailTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC7F1ABE1B6FB38AF3969278F5656CE3 /* Pods-IrishRailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IrishRailTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCB3053A7B9B8747D1160C27D8CA7C68 /* CXMLAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CXMLAttribute.swift; path = CheatyXML/CXMLAttribute.swift; sourceTree = "<group>"; };
+		E4DC045E9F9681AA99806FEB9FD20114 /* CheatyXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CheatyXML-dummy.m"; sourceTree = "<group>"; };
+		E62DA03C284CF17D15F096A5962FD524 /* Pods-IrishRailTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IrishRailTests-umbrella.h"; sourceTree = "<group>"; };
+		F58548DA22D6F1A54D8804C053034448 /* CheatyXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CheatyXML.modulemap; sourceTree = "<group>"; };
+		F78C569315A8B3A4B8C38B80CD30C81F /* CXMLTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CXMLTag.swift; path = CheatyXML/CXMLTag.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		774B110662D231C726861EF7A7AD7AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0DC6A3F8E3094B493D2884A92254CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE99D1F1DF5F92590FE9A4E531E6D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99392F58622C8208E942E936134B9CD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B35D9818750E0CE7EF2880347E505E64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639F3046A9B73FB0BF6765D7E8207482 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50146E6AAD44EE23B2C3255B9A0FCAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1563C60E28EFA111D1EECB6BBEF0123F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150AB7E4BC793672DEB0B0E95A3F06D3 /* Pods-IrishRail */ = {
+			isa = PBXGroup;
+			children = (
+				4C49719DD3ED7BEDBDE2FC61D065B929 /* Info.plist */,
+				21E678F15036E9F2A84A21AF63919D3F /* Pods-IrishRail.modulemap */,
+				1206B330451565D331DFE602966E49D3 /* Pods-IrishRail-acknowledgements.markdown */,
+				5373965722C4B349DF79A15B0BB67858 /* Pods-IrishRail-acknowledgements.plist */,
+				79BA28D79A187DF7AE7938FBDC359448 /* Pods-IrishRail-dummy.m */,
+				8B758043279D1BA4BF5402BE0329B996 /* Pods-IrishRail-frameworks.sh */,
+				95A17DD754124BE8821AED1FED41B6B4 /* Pods-IrishRail-resources.sh */,
+				9BFB137FE3B38087E82D650BBCFC0B4F /* Pods-IrishRail-umbrella.h */,
+				387C4C8559D8E1F95A510BC5535635FB /* Pods-IrishRail.debug.xcconfig */,
+				A4D8F94E7B856D86F8CD3CC7BB4F26A6 /* Pods-IrishRail.release.xcconfig */,
+			);
+			name = "Pods-IrishRail";
+			path = "Target Support Files/Pods-IrishRail";
+			sourceTree = "<group>";
+		};
+		477C4CC6A60E215ACC778A0C9F204F25 /* Pods-IrishRailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD7751961627FD96AB2DFC8CB80EB8 /* Info.plist */,
+				58EFCC6B36BADBEB339ACCEA52130616 /* Pods-IrishRailUITests.modulemap */,
+				B0D71D0D799D327E72F560D8595AAE1B /* Pods-IrishRailUITests-acknowledgements.markdown */,
+				55EE9DADFDB87DF3220054C70B0743DA /* Pods-IrishRailUITests-acknowledgements.plist */,
+				5FD92ADC3ACAA00AB41F6871D90660BA /* Pods-IrishRailUITests-dummy.m */,
+				8040B9C3F2CF64E56C656C33A7B55502 /* Pods-IrishRailUITests-frameworks.sh */,
+				9251811D81B8D79C483F777943B81252 /* Pods-IrishRailUITests-resources.sh */,
+				8792F60EF8054DAABA13CF55ACD56E69 /* Pods-IrishRailUITests-umbrella.h */,
+				5BF15682DA03C664ED022F1B4AA26AA2 /* Pods-IrishRailUITests.debug.xcconfig */,
+				9E2FD0F209886ED66C83E4D05E440084 /* Pods-IrishRailUITests.release.xcconfig */,
+			);
+			name = "Pods-IrishRailUITests";
+			path = "Target Support Files/Pods-IrishRailUITests";
+			sourceTree = "<group>";
+		};
+		4D3874865FF87308A7E8E7950F912010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ADBBBF5E7D3B4258CA2064AD9733D97 /* CheatyXML.framework */,
+				605481EC20E64B2D1C62102F57FC29D7 /* Pods_IrishRail.framework */,
+				172ED6CC5269EFEB519BEE85CCF4E043 /* Pods_IrishRailTests.framework */,
+				C210FA11EEEDBD64B111897F13D49806 /* Pods_IrishRailUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6450AC166225D524A7957BAF4E9699BA /* Pods-IrishRailTests */ = {
+			isa = PBXGroup;
+			children = (
+				1962FD8F4C2712AA261BA60437605388 /* Info.plist */,
+				548FC6CE1B9B977F537C4E11062DF0A3 /* Pods-IrishRailTests.modulemap */,
+				DABC6F728FFEDB27BC6FAA9C847F04D5 /* Pods-IrishRailTests-acknowledgements.markdown */,
+				6709B17CF4ECBCE8AE68243F3421D834 /* Pods-IrishRailTests-acknowledgements.plist */,
+				1A25421B14752746EB5784423178840C /* Pods-IrishRailTests-dummy.m */,
+				8B8621FCA8C37B58ECB337C8048BC934 /* Pods-IrishRailTests-frameworks.sh */,
+				C995DF18B82F7A1469129802F40E8227 /* Pods-IrishRailTests-resources.sh */,
+				E62DA03C284CF17D15F096A5962FD524 /* Pods-IrishRailTests-umbrella.h */,
+				DC7F1ABE1B6FB38AF3969278F5656CE3 /* Pods-IrishRailTests.debug.xcconfig */,
+				C9AE5FE716CE1A97F3D2867FC0AD91E3 /* Pods-IrishRailTests.release.xcconfig */,
+			);
+			name = "Pods-IrishRailTests";
+			path = "Target Support Files/Pods-IrishRailTests";
+			sourceTree = "<group>";
+		};
+		74AA4C46D5716FAC08AD8B6B31E7FE6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB345FDF9FC1AB6340F3E74E27A5CF6F /* CheatyXML */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				74AA4C46D5716FAC08AD8B6B31E7FE6B /* Pods */,
+				4D3874865FF87308A7E8E7950F912010 /* Products */,
+				F5453590B7958EEF1C908D2815DE3933 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86A37C25565584A9016E0BB8511C6816 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F58548DA22D6F1A54D8804C053034448 /* CheatyXML.modulemap */,
+				432B8BC496505067CDE688808182F08A /* CheatyXML.xcconfig */,
+				E4DC045E9F9681AA99806FEB9FD20114 /* CheatyXML-dummy.m */,
+				7D2FC5C12C6803BFEB821255AA15151C /* CheatyXML-prefix.pch */,
+				805E65B11C21EA7480B75596EB17E46A /* CheatyXML-umbrella.h */,
+				D6448076E581AD1EAB175DC1A8F4C8BA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CheatyXML";
+			sourceTree = "<group>";
+		};
+		AB345FDF9FC1AB6340F3E74E27A5CF6F /* CheatyXML */ = {
+			isa = PBXGroup;
+			children = (
+				DCB3053A7B9B8747D1160C27D8CA7C68 /* CXMLAttribute.swift */,
+				D88A104870ED60699CEF0D61E39B76D2 /* CXMLElement.swift */,
+				1DBBC6FC8102EF769DEA6B6508BB7875 /* CXMLNullAttribute.swift */,
+				CCDE96FEE3D664038010AB3E3AFBD1D6 /* CXMLNullTag.swift */,
+				245B517F36CB39141DFF4E504D1FD4C1 /* CXMLParser.swift */,
+				F78C569315A8B3A4B8C38B80CD30C81F /* CXMLTag.swift */,
+				86A37C25565584A9016E0BB8511C6816 /* Support Files */,
+			);
+			name = CheatyXML;
+			path = CheatyXML;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5453590B7958EEF1C908D2815DE3933 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				150AB7E4BC793672DEB0B0E95A3F06D3 /* Pods-IrishRail */,
+				6450AC166225D524A7957BAF4E9699BA /* Pods-IrishRailTests */,
+				477C4CC6A60E215ACC778A0C9F204F25 /* Pods-IrishRailUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F8B8543F17279FC0ABB21ECFB74F69E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88CBA17ED46BE427BBEA9342262BEA64 /* Pods-IrishRail-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9365358D726313BD9ECA60FAF5C1D3C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D538F62DEED802045A8C88D02EBED730 /* Pods-IrishRailUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936A3AF79365CB25F2F432BAB4DA12FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F815FFE052B82442D130347AE37A060 /* CheatyXML-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5BBB5E3302E0E4B76B22497DD01186 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8A8BB06683E07565E87E1F4758E234F /* Pods-IrishRailTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0890D404D1AB5016E43C8D8474E1D03C /* Pods-IrishRail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC4DD03CEACDEE31EED10BF446FD19A0 /* Build configuration list for PBXNativeTarget "Pods-IrishRail" */;
+			buildPhases = (
+				CE4159A033DA028D3B1204CFE6CEFA01 /* Sources */,
+				774B110662D231C726861EF7A7AD7AE5 /* Frameworks */,
+				0F8B8543F17279FC0ABB21ECFB74F69E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C90184ECE5B20A44B69945E2CA2E518 /* PBXTargetDependency */,
+			);
+			name = "Pods-IrishRail";
+			productName = "Pods-IrishRail";
+			productReference = 605481EC20E64B2D1C62102F57FC29D7 /* Pods_IrishRail.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83C49ED51D569306E9F00C13B341484D /* Pods-IrishRailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9105AFCD6B6DCF3EFFAE8E21A4622D /* Build configuration list for PBXNativeTarget "Pods-IrishRailUITests" */;
+			buildPhases = (
+				30EFE382C49841BD49BABF69DD784444 /* Sources */,
+				9CE99D1F1DF5F92590FE9A4E531E6D02 /* Frameworks */,
+				9365358D726313BD9ECA60FAF5C1D3C2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7615E858D778A68E229CA993BF305FFB /* PBXTargetDependency */,
+			);
+			name = "Pods-IrishRailUITests";
+			productName = "Pods-IrishRailUITests";
+			productReference = C210FA11EEEDBD64B111897F13D49806 /* Pods_IrishRailUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		840AFA8D85C5B9D3A59797AA9F6BB90D /* CheatyXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FE94EB4A5FE613979D9D272F47BE562 /* Build configuration list for PBXNativeTarget "CheatyXML" */;
+			buildPhases = (
+				BA87B6EB749105EE06CCE96D1378246E /* Sources */,
+				B35D9818750E0CE7EF2880347E505E64 /* Frameworks */,
+				936A3AF79365CB25F2F432BAB4DA12FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheatyXML;
+			productName = CheatyXML;
+			productReference = 8ADBBBF5E7D3B4258CA2064AD9733D97 /* CheatyXML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAA7070591C4AD06FF958F19745852E8 /* Pods-IrishRailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35047A788DF0E268691D2A8F49D628B5 /* Build configuration list for PBXNativeTarget "Pods-IrishRailTests" */;
+			buildPhases = (
+				AAF0ED60B68D8ADA14FCEB243059B5EF /* Sources */,
+				B50146E6AAD44EE23B2C3255B9A0FCAE /* Frameworks */,
+				EC5BBB5E3302E0E4B76B22497DD01186 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45A7BDA335322428EBDCA142FD9851CD /* PBXTargetDependency */,
+			);
+			name = "Pods-IrishRailTests";
+			productName = "Pods-IrishRailTests";
+			productReference = 172ED6CC5269EFEB519BEE85CCF4E043 /* Pods_IrishRailTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4D3874865FF87308A7E8E7950F912010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840AFA8D85C5B9D3A59797AA9F6BB90D /* CheatyXML */,
+				0890D404D1AB5016E43C8D8474E1D03C /* Pods-IrishRail */,
+				AAA7070591C4AD06FF958F19745852E8 /* Pods-IrishRailTests */,
+				83C49ED51D569306E9F00C13B341484D /* Pods-IrishRailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30EFE382C49841BD49BABF69DD784444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B8F84E83309F19E1F19A8973A0A4A2 /* Pods-IrishRailUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF0ED60B68D8ADA14FCEB243059B5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93EC6593822368149222B3F6545B415D /* Pods-IrishRailTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA87B6EB749105EE06CCE96D1378246E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CFF209F874F6F4F2C773B24C09603 /* CheatyXML-dummy.m in Sources */,
+				1D2B6F6229063A8C0B7D94A8573C9941 /* CXMLAttribute.swift in Sources */,
+				AD3401DDC885158A60113FB8C379AD9D /* CXMLElement.swift in Sources */,
+				1D09741C2DBD4D00D1A50DA30261BDDF /* CXMLNullAttribute.swift in Sources */,
+				BCC908B1AA79BC8B6BF60351EA5B31A5 /* CXMLNullTag.swift in Sources */,
+				29FBE6124A660D25AD7A1D9D95A1F1DC /* CXMLParser.swift in Sources */,
+				C2BB37BE9AA4C01464FB6DEBAE8CABF5 /* CXMLTag.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4159A033DA028D3B1204CFE6CEFA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58548BCC4ED23BB71C9088AB12757A43 /* Pods-IrishRail-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C90184ECE5B20A44B69945E2CA2E518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CheatyXML;
+			target = 840AFA8D85C5B9D3A59797AA9F6BB90D /* CheatyXML */;
+			targetProxy = 5C0D4CA74017778E78B7C05A48388ADC /* PBXContainerItemProxy */;
+		};
+		45A7BDA335322428EBDCA142FD9851CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-IrishRail";
+			target = 0890D404D1AB5016E43C8D8474E1D03C /* Pods-IrishRail */;
+			targetProxy = CBB78301E5E5ED377FB12DABB4819F8C /* PBXContainerItemProxy */;
+		};
+		7615E858D778A68E229CA993BF305FFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-IrishRail";
+			target = 0890D404D1AB5016E43C8D8474E1D03C /* Pods-IrishRail */;
+			targetProxy = 6C84075AD2B1659FA16501D7D08C4C1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34A7DC60B4E9F7BE10D5BD568058DB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF15682DA03C664ED022F1B4AA26AA2 /* Pods-IrishRailUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IrishRailUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IrishRailUITests/Pods-IrishRailUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38365D7EE4D1D408360329B7E3CBA0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC7F1ABE1B6FB38AF3969278F5656CE3 /* Pods-IrishRailTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IrishRailTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IrishRailTests/Pods-IrishRailTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		538C908532F32B6616935C5198A5E90F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9AE5FE716CE1A97F3D2867FC0AD91E3 /* Pods-IrishRailTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IrishRailTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IrishRailTests/Pods-IrishRailTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9E41F20D682D568493AD3CE79DEC46FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432B8BC496505067CDE688808182F08A /* CheatyXML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CheatyXML/CheatyXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CheatyXML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CheatyXML/CheatyXML.modulemap";
+				PRODUCT_MODULE_NAME = CheatyXML;
+				PRODUCT_NAME = CheatyXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1BED7321E80B7147A45B21FE095F642 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432B8BC496505067CDE688808182F08A /* CheatyXML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CheatyXML/CheatyXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CheatyXML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CheatyXML/CheatyXML.modulemap";
+				PRODUCT_MODULE_NAME = CheatyXML;
+				PRODUCT_NAME = CheatyXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A49CC3E5561F0E273E2D31317D088E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2FD0F209886ED66C83E4D05E440084 /* Pods-IrishRailUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IrishRailUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IrishRailUITests/Pods-IrishRailUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9E39CD96AFFDAD6485C8B9BF16D5014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D8F94E7B856D86F8CD3CC7BB4F26A6 /* Pods-IrishRail.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IrishRail/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IrishRail/Pods-IrishRail.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2D24E4FFA0992FA27377312FC5ADC76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 387C4C8559D8E1F95A510BC5535635FB /* Pods-IrishRail.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IrishRail/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IrishRail/Pods-IrishRail.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35047A788DF0E268691D2A8F49D628B5 /* Build configuration list for PBXNativeTarget "Pods-IrishRailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38365D7EE4D1D408360329B7E3CBA0D1 /* Debug */,
+				538C908532F32B6616935C5198A5E90F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FE94EB4A5FE613979D9D272F47BE562 /* Build configuration list for PBXNativeTarget "CheatyXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1BED7321E80B7147A45B21FE095F642 /* Debug */,
+				9E41F20D682D568493AD3CE79DEC46FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9105AFCD6B6DCF3EFFAE8E21A4622D /* Build configuration list for PBXNativeTarget "Pods-IrishRailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A7DC60B4E9F7BE10D5BD568058DB75 /* Debug */,
+				A49CC3E5561F0E273E2D31317D088E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC4DD03CEACDEE31EED10BF446FD19A0 /* Build configuration list for PBXNativeTarget "Pods-IrishRail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D24E4FFA0992FA27377312FC5ADC76 /* Debug */,
+				D9E39CD96AFFDAD6485C8B9BF16D5014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
