@@ -279,10 +279,10 @@
             </objects>
             <point key="canvasLocation" x="2645.5999999999999" y="132.68365817091455"/>
         </scene>
-        <!--Stops View Controller-->
+        <!--Train stops-->
         <scene sceneID="YUt-cq-fyJ">
             <objects>
-                <viewController id="F5H-44-lrU" customClass="StopsViewController" customModule="IrishRail" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StopsVC" id="F5H-44-lrU" customClass="StopsViewController" customModule="IrishRail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FW3-fW-Dww">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,7 +291,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stopCell" textLabel="fpK-cT-e70" detailTextLabel="2iV-8O-wa4" style="IBUITableViewCellStyleSubtitle" id="IUW-fU-5eJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stopCell" textLabel="fpK-cT-e70" detailTextLabel="2iV-8O-wa4" style="IBUITableViewCellStyleValue1" id="IUW-fU-5eJ">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IUW-fU-5eJ" id="kv4-xS-jXx">
@@ -299,16 +299,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fpK-cT-e70">
-                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iV-8O-wa4">
-                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iV-8O-wa4">
+                                                    <rect key="frame" x="301" y="12" width="59" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -327,7 +327,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NdZ-9w-78R"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1ld-06-E5A"/>
+                    <navigationItem key="navigationItem" title="Train stops" id="1ld-06-E5A"/>
                     <connections>
                         <outlet property="stopsTableView" destination="ZSH-ue-3WL" id="lZS-Ox-MeX"/>
                     </connections>

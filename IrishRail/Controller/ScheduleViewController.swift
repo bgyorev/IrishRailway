@@ -12,6 +12,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
 
 	@IBOutlet weak var scheduleTableView: UITableView!
 	open var trains: [Dictionary<String, String?>]?
+	private let webserviceHelper = WebserviceHelper.sharedInstance
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,4 +54,15 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
 		return UITableViewCell()
 	}
 
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		if let trains = trains {
+			let train = trains[indexPath.row]
+			webserviceHelper.getTrainStops(byCode: train["Traincode"] as! String) { (stops) in
+				let stopsVC = self.storyboard?.instantiateViewController(withIdentifier: "StopsVC") as! StopsViewController
+				stopsVC.stops = stops
+				self.navigationController?.pushViewController(stopsVC, animated: true)
+			}
+		}
+	}
+	
 }

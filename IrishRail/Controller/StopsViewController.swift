@@ -12,6 +12,8 @@ class StopsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
 	@IBOutlet weak var stopsTableView: UITableView!
 	
+	open var stops:[Dictionary<String, String?>]?
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,10 +26,20 @@ class StopsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		if let stops = stops {
+			return stops.count
+		}
 		return 0
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		if let stops = stops {
+			let cell = tableView.dequeueReusableCell(withIdentifier: "stopCell")!
+			let stop = stops[indexPath.row]
+			cell.textLabel?.text = "\(stop["LocationFullName"]!!)(\(stop["LocationCode"]!!))"
+			cell.detailTextLabel?.text = stop["ScheduledArrival"] ?? ""
+			return cell
+		}
 		return UITableViewCell()
 	}
 	
