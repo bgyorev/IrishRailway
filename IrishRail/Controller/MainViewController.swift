@@ -67,19 +67,6 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 		}
 		
 	}
-
-	// MARK: Private methods
-	@objc
-	private func doneButtonPressed() {
-		stationTextField.resignFirstResponder()
-	}
-	
-	@objc
-	private func cancelButtonPressed() {
-		self.doneButtonPressed()
-		selectedStation = nil
-		stationTextField.text = ""
-	}
 	
 	// MARK: UIPickerViewDataSource
 	func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -127,6 +114,18 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
 				self.navigationController?.pushViewController(scheduleVC, animated: true)
 			}
 		}
+	}
+	
+	@objc
+	private func doneButtonPressed() {
+		stationTextField.resignFirstResponder()
+	}
+	
+	@objc
+	private func cancelButtonPressed() {
+		self.doneButtonPressed()
+		selectedStation = nil
+		stationTextField.text = ""
 	}
 	
 }

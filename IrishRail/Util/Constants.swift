@@ -20,5 +20,11 @@ struct Constants {
 		static let stationDescription = "StationDesc"
 		static let stationCode = "StationCode"
 		static let stationId = "StationId"
+		static let origin = "Origin"
+		static let destionation = "Destination"
+		static let originTime = "Origintime"
+		static let destinationTime = "Destinationtime"
+		static let expectedArrival = "Exparrival"
+		static let expectedDeparture = "Expdepart"
 	}
 }
